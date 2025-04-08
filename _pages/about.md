@@ -24,6 +24,7 @@ I am very fortunate to be advised by [Prof. Dongyao Chen](https://chendy.tech/) 
 Previously, I obtained a bachelor's degree in Software Engineering from [Xidian University](https://en.xidian.edu.cn/) in 2021. 
 
 My research interests focus on Internet of Things (IoT), wireless sensing system and robotic system.
+Currently, I am focusing on magnetic sensing techniques for perception and detection tasks in complex environments.
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
