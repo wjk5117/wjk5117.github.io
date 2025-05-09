@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 subtitle: Ph.D. Student at Shanghai Jiao Tong University
@@ -23,9 +23,7 @@ I'm currently a fourth-year PhD student in [IIOT Research Center](https://iiot.s
 I am very fortunate to be advised by [Prof. Dongyao Chen](https://chendy.tech/) of CyPhy Lab. 
 Previously, I obtained a bachelor's degree in Software Engineering from [Xidian University](https://en.xidian.edu.cn/) in 2021. 
 
-
-My research lies at the intersection of wireless sensing, embedded intelligence, and mobile robotics. I focus on building robust, energy-efficient sensing systems that enable high-precision perception in resource-constrained and complex environments. 
-
+My research lies at the intersection of wireless sensing, embedded intelligence, and mobile robotics. I focus on building robust, energy-efficient sensing systems that enable high-precision perception in resource-constrained and complex environments.
 Currently, I am particularly interested in magnetic sensing, a modality that is naturally immune to occlusion, lighting conditions, and wireless interference—making it uniquely suited for challenging, real-world scenarios.
 To explore its potential, I developed Polaris, a vision-free magnetic fiducial system for mm-level robot pose estimation, and METRO, a magnetic road infrastructure system enabling all-weather road marking perception for vehicles.
 
