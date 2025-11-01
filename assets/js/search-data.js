@@ -430,8 +430,8 @@ ninja.data = [{
           description: "A full-stack magnetic fiducial system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-metro-magnetic-road-markings-for-all-weather-smart-roads",
-          title: 'METRO — Magnetic Road Markings for All-weather, Smart Roads',
+            },},{id: "projects-metro-magnetic-road-markings",
+          title: 'METRO — Magnetic Road Markings',
           description: "Passive magnetic tags plus a low-cost magnetometer array that complement cameras for robust road-marking perception in adverse weather",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
