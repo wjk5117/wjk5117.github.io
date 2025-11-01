@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Polaris — Vision-free Magnetic Fiducials
-description: A full-stack magnetic sensing system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.
+description: A full-stack magnetic fiducial system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.
 img: assets/img/illustration_polaris.png
 importance: 1
 category: work
@@ -13,7 +13,7 @@ related_publications: true
   <a class="btn btn-sm btn-outline-primary" href="https://github.com/wjk5117/Polaris" target="_blank">🧑‍💻 Code of Polaris</a>
 </p>
 
-> **Overview.** Polaris is a **vision-free fiducial** based on a **magnetic constellation**: tiny passive disc magnets on the floor plus a lightweight **magnetometer array** on the robot. It **complements cameras** by preserving **precise pose** and **high-capacity IDs** under occlusion, dust, low light, or privacy constraints.
+> **Polaris** is a **vision-free fiducial** based on a **magnetic constellation**: tiny passive disc magnets on the floor plus a lightweight **magnetometer array** on the robot. It **complements cameras** by preserving **precise pose** and **high-capacity IDs** under occlusion, dust, low light, or privacy constraints.
 
 ## Motivation — a complementary path when vision degrades
 Visual fiducials (e.g., AprilTag) can be impaired by **occlusion/visibility** issues (dust, occlusion, low light) and may raise **power/privacy** concerns.
