@@ -2,7 +2,7 @@
 layout: page
 title: Polaris — Vision-free Magnetic Fiducials
 description: A full-stack magnetic constellation that enables pose estimation and rich data encoding when vision fails.
-img: assets/projects/polaris/illustration_polaris.jpg
+img: assets/img/illustration_polaris.png
 importance: 1
 category: work
 related_publications: true
@@ -33,9 +33,9 @@ Polaris sidesteps these by using **passive magnets + COTS magnetometers**: magne
 ---
 
 ## System at a glance
-Polaris replaces printed tags and cameras with a **magnetic constellation**:
-1) a compact **ground tag** whose magnets’ *positions* and *polarity orientations* encode bits;  
-2) a **bar-shaped magnetometer array** and a lightweight pipeline that detects magnets, estimates orientation, and reconstructs the tag for ID & pose.
+Polaris replaces visual tags and cameras with a novel **magnetic sensing module**:
+1) a compact **magnetic tag** which uses the magnets’ *positions* and *polarity orientations* to encode bits;  
+2) a low-cost and energy-efficient **linear magnetometer array** and a lightweight sensing pipeline that detects magnets, estimates polarity orientation, and reconstructs the tag for ID & pose.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
@@ -55,17 +55,30 @@ Polaris replaces printed tags and cameras with a **magnetic constellation**:
 ---
 
 ## Highlights
-- **MOSK (Magnetic Orientation-shift Keying):** a 3×3 cm tag with 9 magnets encodes **36 bits** (on par with AprilTag 36h11).  
-- **Accurate & efficient:** ~**1°** heading and sub-**2–3 mm** per-magnet localization on a robot; **0.58 mm** mean and **0.997°** mean on a miniature platform.  
+- **MOSK (Magnetic Orientation-shift Keying):
+<!-- 这里需要阐述下什么mosk吧 -->
+For example, ** a 3×3 cm tag with 9 magnets encodes **36 bits**.  
+- **Accurate & efficient:
+<!-- 这里需要铺垫下吧，比如用了什么技术，让其这么精准、还能这么高效 -->
+** ~**1°** heading and sub-**2–3 mm** per-magnet localization on a robot; **0.58 mm** mean and **0.997°** mean on a miniature platform.  
 - **Low power:** a **25.08 mW** three-sensor array; embedded template-matching pipeline on ESP32-S3.  
-- **Robust where vision fails:** handles dust/iron filings/poor light, and avoids privacy issues of always-on cameras.
+- **Robust where vision fails:** handles occlusion/poor light, and avoids privacy issues of always-on cameras.
 
 ---
 
-## How it works (TL;DR)
+## How it works
 - **Encode.** A chessboard-like 2D layout. Three corner magnets form a **position pattern**; other sites encode data via **polarity orientation** (+ optional spatial permutation).  
 - **Sense.** The array samples tri-axial fields; **derivative zero-crossings** detect peaks & polarities. **Template alignment** (DDTW) finds each magnet’s orientation relative to the array.  
 - **Localize & pose.** Two-sensor geometry gives lateral offsets; timestamps + speed give longitudinal positions. Reconstruct the tag → estimate robot pose → **decode ID**.
+
+<!-- 这下面的内容可以和上面的how it works结合下 -->
+## Key features for deployment
+- **Compact, scalable encoding.** Higher-order MOSK boosts payload without extra hardware; works with FEC for robust IDs.  
+- **Lightweight pipeline.** Peak/derivative + DDTW template alignment in C (tens of ms on embedded).  
+- **Low-cost hardware.** Off-the-shelf disc magnets + COTS triaxial magnetometers; modular bar PCB.
+
+---
+
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
@@ -81,7 +94,7 @@ Polaris replaces printed tags and cameras with a **magnetic constellation**:
 
 ---
 
-## Results (real world)
+## Experiment results
 - **Pose & decoding:** mean Euclidean error **0.58 mm** (STD 0.08 mm); mean heading error **0.997°** (STD 0.125°); BER ≈ **0.033** with 8-level MOSK on ESP32.  
 - **Small & frugal:** **1.6×1.6 cm²** tag is decodable; sensing+compute power budgets fit miniature/small robots; sensor array **25.08 mW** (3 triaxial mags).
 
@@ -99,12 +112,7 @@ Polaris replaces printed tags and cameras with a **magnetic constellation**:
 
 ---
 
-## Key features for deployment
-- **Compact, scalable encoding.** Higher-order MOSK boosts payload without extra hardware; works with FEC for robust IDs.  
-- **Lightweight pipeline.** Peak/derivative + DDTW template alignment in C (tens of ms on embedded).  
-- **Low-cost hardware.** Off-the-shelf disc magnets + COTS triaxial magnetometers; modular bar PCB.
 
----
 
 ## Publication
 **Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation.** *ACM MobiCom ’24, Washington, D.C., USA.* DOI: 10.1145/3636534.3690711
