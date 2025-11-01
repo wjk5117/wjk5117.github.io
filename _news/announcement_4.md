@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Served on the **ACM MobiCom 2025 Artifact Evaluation Committee**.
+:smile: Served on the **ACM MobiCom 2025 Artifact Evaluation Committee**.

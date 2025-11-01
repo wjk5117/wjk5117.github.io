@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Honored to receive the **National Scholarship (Ph.D.)** 🏆 :smile:
+🏆 :smile: Honored to receive the **National Scholarship (Ph.D.)**

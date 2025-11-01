@@ -5,7 +5,7 @@ permalink: /
 subtitle: Ph.D. Student in Computer Science at SJTU · AIoT & Wireless Sensing
 
 profile:
-  align: left
+  align: right
   image: jike_photo.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
