@@ -1,6 +1,6 @@
 ---
 layout: page
-title: METRO — Magnetic Road Markings for All-weather, Smart Roads
+title: METRO — Magnetic Road Markings
 description: Passive magnetic tags plus a low-cost magnetometer array that complement cameras for robust road-marking perception in adverse weather
 img: assets/img/illustration_metro.png  # background image on the portfolio grid
 importance: 1
@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 <p>
-  <a class="btn btn-sm btn-outline-primary" href="assets/pdf/METRO_SenSys23.pdf" target="_blank">📄 Paper (ACM SenSys 2023)</a>
+  <a class="btn btn-sm btn-outline-primary" href="../assets/pdf/METRO_SenSys23.pdf" target="_blank">📄 Paper (ACM SenSys 2023)</a>
   <a class="btn btn-sm btn-outline-primary" href="https://github.com/wjk5117/METRO" target="_blank">🧑‍💻 Code of METRO</a>
 </p>
 

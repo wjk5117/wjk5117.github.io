@@ -9,8 +9,10 @@ related_publications: true
 ---
 
 <p>
-  <a class="btn btn-sm btn-outline-primary" href="assets/pdf/Polaris_MobiCom24-compressed.pdf" target="_blank">📄 Paper (ACM MobiCom 2024)</a>
+  <a class="btn btn-sm btn-outline-primary" href="../assets/pdf/Polaris_MobiCom24-compressed.pdf" target="_blank">📄 Paper (ACM MobiCom 2024)</a>
   <a class="btn btn-sm btn-outline-primary" href="https://github.com/wjk5117/Polaris" target="_blank">🧑‍💻 Code of Polaris</a>
+  <!-- add a Demo of Polaris -->
+  <a class="btn btn-sm btn-outline-primary" href="https://www.youtube.com/watch?v=gdAEeNdMJk0" target="_blank">🎥 Demo of Polaris</a>
 </p>
 
 > **Polaris** is a **vision-free fiducial** based on a **magnetic constellation**: tiny passive disc magnets on the floor plus a lightweight **magnetometer array** on the robot. It **complements cameras** by preserving **precise pose** and **high-capacity IDs** under occlusion, dust, low light, or privacy constraints.
