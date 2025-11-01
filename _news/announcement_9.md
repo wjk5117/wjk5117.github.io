@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🏆 :smile: Honored to receive the **Best Presentation Award** at the **Rising Star Forum, AIoTSys 2025**. Appreciate our team’s great work!
+🏆 Honored to receive the **Best Presentation Award** at the **Rising Star Forum, AIoTSys 2025**. Appreciate our team’s great work!
