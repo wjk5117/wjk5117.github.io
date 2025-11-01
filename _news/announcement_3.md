@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🏆 Honored to receive the **National Scholarship (Ph.D.)**. Appreciate our team’s great work!
+:trophy: Honored to receive the **National Scholarship (Ph.D.)**. Appreciate our team’s great work!

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 Our paper **METRO** is accepted to **ACM SenSys 2023**!
+:tada: Our paper **METRO** is accepted to **ACM SenSys 2023**!

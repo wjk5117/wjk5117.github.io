@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎤 Invited talk at **Microsoft Research Asia (MSRA, Shanghai)** on our **Polaris** system.
+:microphone: Invited talk at **Microsoft Research Asia (MSRA, Shanghai)** on our **Polaris** system.

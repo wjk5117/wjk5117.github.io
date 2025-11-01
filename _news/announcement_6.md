@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-✈️ Presented **Polaris** at **ACM MobiCom 2024**, Washington, D.C., USA.
+:airplane: Presented **Polaris** at **ACM MobiCom 2024**, Washington, D.C., USA.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-✈️ Presented **METRO** at **ACM SenSys 2023** in Istanbul, Türkiye.
+:airplane: Presented **METRO** at **ACM SenSys 2023** in Istanbul, Türkiye.

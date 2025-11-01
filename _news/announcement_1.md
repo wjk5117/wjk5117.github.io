@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎉 Our paper **Polaris** is accepted to **ACM MobiCom 2024**!
+:tada: Our paper **Polaris** is accepted to **ACM MobiCom 2024**!
