@@ -427,7 +427,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-polaris-vision-free-magnetic-fiducials",
           title: 'Polaris — Vision-free Magnetic Fiducials',
-          description: "A full-stack magnetic constellation that enables pose estimation and rich data encoding when vision fails.",
+          description: "A full-stack magnetic sensing system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-metro-magnetic-road-markings-for-all-weather-smart-roads",
