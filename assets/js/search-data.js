@@ -425,9 +425,9 @@ ninja.data = [{
           section: "News",},{id: "news-trophy-honored-to-receive-the-best-presentation-award-at-the-rising-star-forum-aiotsys-2025-appreciate-our-team-s-great-work",
           title: ':trophy: Honored to receive the Best Presentation Award at the Rising Star Forum,...',
           description: "",
-          section: "News",},{id: "projects-polaris",
-          title: 'Polaris',
-          description: "Vision-free magnetic fiducials for robust robot localization and context.",
+          section: "News",},{id: "projects-polaris-vision-free-magnetic-fiducials",
+          title: 'Polaris — Vision-free Magnetic Fiducials',
+          description: "A full-stack magnetic constellation that enables pose estimation and rich data encoding when vision fails.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-metro-magnetic-road-markings-for-all-weather-smart-roads",
