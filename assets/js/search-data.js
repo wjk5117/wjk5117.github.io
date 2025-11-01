@@ -427,12 +427,12 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-polaris-vision-free-magnetic-fiducials",
           title: 'Polaris — Vision-free Magnetic Fiducials',
-          description: "A full-stack magnetic sensing system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.",
+          description: "A full-stack magnetic fiducial system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-metro-magnetic-road-markings-for-all-weather-smart-roads",
           title: 'METRO — Magnetic Road Markings for All-weather, Smart Roads',
-          description: "Passive magnetic tags + a low-cost magnetometer array for robust lane and symbol perception in adverse weather",
+          description: "Passive magnetic tags plus a low-cost magnetometer array that complement cameras for robust road-marking perception in adverse weather",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{
