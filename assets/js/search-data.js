@@ -425,16 +425,16 @@ ninja.data = [{
           section: "News",},{id: "news-trophy-honored-to-receive-the-best-presentation-award-at-the-rising-star-forum-aiotsys-2025-appreciate-our-team-s-great-work",
           title: ':trophy: Honored to receive the Best Presentation Award at the Rising Star Forum,...',
           description: "",
-          section: "News",},{id: "projects-polaris-vision-free-magnetic-fiducials",
-          title: 'Polaris — Vision-free Magnetic Fiducials',
-          description: "A full-stack magnetic fiducial system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-metro-magnetic-road-markings",
+          section: "News",},{id: "projects-metro-magnetic-road-markings",
           title: 'METRO — Magnetic Road Markings',
           description: "Passive magnetic tags plus a low-cost magnetometer array that complement cameras for robust road-marking perception in adverse weather",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/projects/metro_project/";
+            },},{id: "projects-polaris-vision-free-magnetic-fiducials",
+          title: 'Polaris — Vision-free Magnetic Fiducials',
+          description: "A full-stack magnetic fiducial system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/polaris_project/";
             },},{
         id: 'social-email',
         title: 'email',
