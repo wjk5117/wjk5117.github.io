@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 <p>
-  <a class="btn btn-sm btn-outline-primary" href="../assets/pdf/Polaris_MobiCom24-compressed.pdf" target="_blank">📄 Paper (ACM MobiCom 2024)</a>
+  <a class="btn btn-sm btn-outline-primary" href="{{ '/assets/pdf/Polaris_MobiCom24-compressed.pdf' | relative_url }}" target="_blank">📄 Paper (ACM MobiCom 2024)</a>
   <a class="btn btn-sm btn-outline-primary" href="https://github.com/wjk5117/Polaris" target="_blank">🧑‍💻 Code of Polaris</a>
   <!-- add a Demo of Polaris -->
   <a class="btn btn-sm btn-outline-primary" href="https://www.youtube.com/watch?v=gdAEeNdMJk0" target="_blank">🎥 Demo of Polaris</a>

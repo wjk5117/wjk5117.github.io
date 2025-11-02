@@ -9,11 +9,11 @@ related_publications: true
 ---
 
 <p>
-  <a class="btn btn-sm btn-outline-primary" href="../assets/pdf/METRO_SenSys23.pdf" target="_blank">📄 Paper (ACM SenSys 2023)</a>
+  <a class="btn btn-sm btn-outline-primary" href="{{ '/assets/pdf/METRO_SenSys23.pdf' | relative_url }}" target="_blank">📄 Paper (ACM SenSys 2023)</a>
   <a class="btn btn-sm btn-outline-primary" href="https://github.com/wjk5117/METRO" target="_blank">🧑‍💻 Code of METRO</a>
 </p>
 
-> **METRO** encodes lane markings and rich transverse symbols using **passive magnetic tags** and reads them with a **vehicle-mounted magnetometer bar**. Magnetic sensing is **visibility-agnostic** (rain/snow/fog/glare/occlusion) and **complements cameras/LiDAR**, while remaining low-cost and easy to deploy on real roads.
+> **METRO** encodes lane markings and rich transverse symbols using **passive magnetic tags** and reads them with a **vehicle-mounted magnetometer array**. Magnetic sensing is **visibility-agnostic** (rain/snow/fog/glare/occlusion) and **complements cameras/LiDAR**, while remaining low-cost and easy to deploy on real roads.
 
 ## Motivation — a complementary sensing path for road markings
 Visual pipelines can degrade in **rain, snow, glare, or occlusion**; lane paint can be covered or worn.
