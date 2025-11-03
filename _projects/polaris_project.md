@@ -70,7 +70,7 @@ A **linear magnetometer array** samples tri-axial magnetic fields as the robot p
 ### 3. Hardware design and deployment
 The sensing bar integrates low-cost **Hall-effect magnetometers** on a modular PCB, connected to an embedded controller (e.g., nRF52832). The architecture emphasizes **low power**, **low latency**, and **ease of integration** with mobile robots or sensor heads, enabling camera-free fiducial tracking even on resource-constrained platforms.
 
-
+<!-- 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
     {% include figure.liquid path="assets/projects/polaris/pipeline_derivative.jpg" title="Derivative-based peak detection + DDTW orientation alignment" class="img-fluid rounded z-depth-1" %}
@@ -81,7 +81,7 @@ The sensing bar integrates low-cost **Hall-effect magnetometers** on a modular P
 </div>
 <div class="caption">
   Detect → orient → localize → reconstruct → pose → decode — all on embedded hardware within tens of milliseconds.
-</div>
+</div> -->
 
 ---
 
