@@ -425,9 +425,9 @@ ninja.data = [{
           section: "News",},{id: "news-trophy-honored-to-receive-the-best-presentation-award-at-the-rising-star-forum-aiotsys-2025-appreciate-our-team-s-great-work",
           title: ':trophy: Honored to receive the Best Presentation Award at the Rising Star Forum,...',
           description: "",
-          section: "News",},{id: "projects-metro-magnetic-road-markings",
-          title: 'METRO — Magnetic Road Markings',
-          description: "Passive magnetic tags plus a low-cost magnetometer array that complement cameras for robust road-marking perception in adverse weather",
+          section: "News",},{id: "projects-metro-magnetic-road-markings-for-all-weather-perception",
+          title: 'METRO — Magnetic Road Markings for All-weather Perception',
+          description: "Passive magnetic tags + a low-cost magnetometer array that complement cameras for robust lane and symbol perception in adverse weather",
           section: "Projects",handler: () => {
               window.location.href = "/projects/metro_project/";
             },},{id: "projects-polaris-vision-free-magnetic-fiducials",
