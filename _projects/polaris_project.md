@@ -102,7 +102,7 @@ We extensively evaluated **Polaris** across two robotic platforms (**robot car**
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid
        loading="eager"
-       path="assets/img/polaris/experimental_setup.png"
+       path="assets/img/polaris/experiment_setup.png"
        title="Figure A — Sensing module and robotic platforms (robot car & mini car)"
        class="img-fluid rounded z-depth-1" %}
   </div>
