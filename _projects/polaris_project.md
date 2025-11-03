@@ -62,20 +62,13 @@ Vision-based fiducials (e.g., AprilTag) are sensitive to **visibility** (e.g., o
 **Polaris** realizes a **vision-free fiducial** by replacing visual patterns with a **magnetic constellation** that encodes information through the **orientation** of diametrically magnetized discs and decodes it via a **linear magnetometer array**.
 
 ### 1. MOSK-coded constellation
-Each tag adopts **Magnetic Orientation-shift Keying (MOSK)**, a digital modulation scheme where every magnet stores an **M-ary symbol** using its **dipole orientation** (e.g., eight discrete angles -> 3 bits).  
-Unlike visual textures or printed codes, orientation is **translation-invariant** and insensitive to small lateral displacements, allowing dense placement within a compact footprint.  
-A typical 3 × 3 cm tag with nine magnets achieves **AprilTag-level payloads** while remaining passive, thin, and durable.
-Optional **spatial permutation** and **CRC/FEC** layers enhance ID robustness against missing or flipped magnets.
+Each tag adopts **Magnetic Orientation-shift Keying (MOSK)**, a digital modulation scheme where every magnet stores an **M-ary symbol** using its **dipole orientation** (e.g., eight discrete angles -> 3 bits). Unlike visual textures or printed codes, orientation is **translation-invariant** and insensitive to small lateral displacements, allowing dense placement within a compact footprint. A typical 3 × 3 cm tag with nine magnets achieves **AprilTag-level payloads** while remaining passive, thin, and durable. Optional **spatial permutation** and **CRC/FEC** layers enhance ID robustness against missing or flipped magnets.
 
 ### 2. Sensing and decoding pipeline
-A **linear magnetometer array** samples tri-axial magnetic fields as the robot passes over the tag.  
-Polaris employs a lightweight **derivative-based detector** to identify field zero-crossings corresponding to individual magnets and their polarities.  
-For each detected peak, a short **template matching** procedure based on **Dynamic Derivative Time Warping (DDTW)** estimates the local **dipole angle**, reconstructing the constellation pattern.  
-Using the known array geometry and motion odometry, the system infers each magnet’s position and the tag’s **relative pose (x, y, heading)**, followed by **symbol demodulation** and **CRC/FEC verification** to output a stable **ID + pose** stream in real time on embedded hardware.
+A **linear magnetometer array** samples tri-axial magnetic fields as the robot passes over the tag. Polaris employs a lightweight **derivative-based detector** to identify field zero-crossings corresponding to individual magnets and their polarities. For each detected peak, a short **template matching** procedure based on **Dynamic Derivative Time Warping (DDTW)** estimates the local **dipole angle**, reconstructing the constellation pattern. Using the known array geometry and motion odometry, the system infers each magnet’s position and the tag’s **relative pose (x, y, heading)**, followed by **symbol demodulation** and **CRC/FEC verification** to output a stable **ID + pose** stream in real time on embedded hardware.
 
 ### 3. Hardware design and deployment
-The sensing bar integrates low-cost **Hall-effect magnetometers** on a modular PCB, connected to an embedded controller (e.g., nRF52832).  
-The architecture emphasizes **low power**, **low latency**, and **ease of integration** with mobile robots or sensor heads, enabling camera-free fiducial tracking even on resource-constrained platforms.
+The sensing bar integrates low-cost **Hall-effect magnetometers** on a modular PCB, connected to an embedded controller (e.g., nRF52832). The architecture emphasizes **low power**, **low latency**, and **ease of integration** with mobile robots or sensor heads, enabling camera-free fiducial tracking even on resource-constrained platforms.
 
 
 <div class="row justify-content-sm-center">
@@ -128,15 +121,11 @@ We extensively evaluated **Polaris** across two robotic platforms (**robot car**
 ---
 
 ## Publication
-Jike Wang, Yasha Iravantchi, Alanson Sample, Kang G. Shin, Xinbing Wang, and Dongyao Chen. 2024.  
-**Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation.**  
-*Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (ACM MobiCom ’24).*  
-Association for Computing Machinery, New York, NY, USA, 1560–1574.  
-DOI: [10.1145/3636534.3690711](https://doi.org/10.1145/3636534.3690711)
+Jike Wang, Yasha Iravantchi, Alanson Sample, Kang G. Shin, Xinbing Wang, and Dongyao Chen. 2024. **Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation.** *Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (ACM MobiCom ’24).* Association for Computing Machinery, New York, NY, USA, 1560–1574. DOI: [10.1145/3636534.3690711](https://doi.org/10.1145/3636534.3690711)
 
 <!-- Cite this work (collapsible) -->
 <details class="mt-2">
-  <summary><strong>📚 Cite this work (BibTeX)</strong></summary>
+  <summary><strong>📚 Cite our work (BibTeX)</strong></summary>
   <div class="mt-2">
     <pre id="polaris-bibtex" style="white-space: pre-wrap; word-break: break-word; background:#f8f9fa; padding:12px; border-radius:8px; border:1px solid #e5e7eb; font-size:0.9rem;">
 @inproceedings{wang2024polaris,
