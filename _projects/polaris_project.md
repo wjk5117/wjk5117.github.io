@@ -50,30 +50,34 @@ Vision-based fiducials (e.g., AprilTag) are sensitive to **visibility** (e.g., o
      title="Polaris overview: sensing module and MOSK-coded constellation tag"
      class="img-fluid rounded z-depth-1" %}
   <div class="caption mt-2">
-    Polaris sensing module reads MOSK-coded constellation tags to output ID and relative pose; comparable encoding capacity to visual tags, with camera-free operation.
+  (A) shows the magnetic sensing array of Polaris on different robotic systems; 
+  (B) and (C) compare the legacy ground-mounted vision-based tags with Polaris tags. Note they have the same **encoding capacity** and posture calibration capability.
   </div>
 </div>
 
 
-
 ---
 
-## Key innovations
-- **MOSK — Magnetic Orientation-shift Keying.**  
-  A **digital modulation scheme** that stores an **M-ary symbol** at each site via the **orientation** of a **diametrically magnetized disc magnet** (e.g., 8 orientations ⇒ 3 bits/site). Orientation is **translation-invariant** and robust to small lateral offsets. A **3×3 cm** tag with 9 magnets encodes **36 bits** (on par with AprilTag 36h11) in a **much smaller footprint**, and works with **CRC/FEC** for robust IDs.
-- **Lightweight, accurate sensing pipeline (embedded).**  
-  **Derivative zero-crossings** reliably detect magnets and polarity; **template alignment** (DDTW) estimates dipole **orientation**; **two-sensor geometry + timestamp/velocity fusion** localizes magnets (sub-**2–3 mm**) and yields **~1° heading**. The full pipeline runs **real-time on an ESP32-S3**.
-- **Low-cost, low-power hardware.**  
-  COTS **Hall-effect magnetometers** on a modular **bar PCB**; three-sensor array draws **25.08 mW**, suitable for miniature or solar-powered robots.
-- **Complements vision.**  
-  Operates under dust/iron filings/poor light and avoids always-on cameras in sensitive spaces—ideal for **fusion or fallback** with visual fiducials.
+## How Polaris works — design & innovations
+**Polaris** realizes a **vision-free fiducial** by replacing visual patterns with a **magnetic constellation** that encodes information through the **orientation** of diametrically magnetized discs and decodes it via a **linear magnetometer array**.
 
----
+### 1. MOSK-coded constellation
+Each tag adopts **Magnetic Orientation-shift Keying (MOSK)**, a digital modulation scheme where every magnet stores an **M-ary symbol** using its **dipole orientation** (e.g., eight discrete angles -> 3 bits).  
+Unlike visual textures or printed codes, orientation is **translation-invariant** and insensitive to small lateral displacements, allowing dense placement within a compact footprint.  
+A typical 3 × 3 cm tag with nine magnets achieves **AprilTag-level payloads** while remaining passive, thin, and durable.
+Optional **spatial permutation** and **CRC/FEC** layers enhance ID robustness against missing or flipped magnets.
 
-## How it works
-- **Encode.** A chessboard-like layout: three corners provide a **position pattern**; remaining sites carry MOSK symbols (dipole orientations), with optional **spatial permutation** to boost payload or add error protection.  
-- **Sense.** The array samples tri-axial magnetic fields; **first-derivative zero-crossings** reveal peaks & polarities; a short **template** matched via DDTW estimates each magnet’s **dipole angle** relative to the array.  
-- **Localize & pose.** Two longitudinally separated sensors give **lateral offsets** (from amplitude/geometry) and **longitudinal positions** (from timestamps + speed). Reconstruct the tag → **pose** (x, y, heading) → **ID decode + CRC/FEC check**.
+### 2. Sensing and decoding pipeline
+A **linear magnetometer array** samples tri-axial magnetic fields as the robot passes over the tag.  
+Polaris employs a lightweight **derivative-based detector** to identify field zero-crossings corresponding to individual magnets and their polarities.  
+For each detected peak, a short **template matching** procedure based on **Dynamic Derivative Time Warping (DDTW)** estimates the local **dipole angle**, reconstructing the constellation pattern.  
+Using the known array geometry and motion odometry, the system infers each magnet’s position and the tag’s **relative pose (x, y, heading)**, followed by **symbol demodulation** and **CRC/FEC verification** to output a stable **ID + pose** stream in real time on embedded hardware.
+
+### 3. Hardware design and deployment
+The sensing bar integrates low-cost **Hall-effect magnetometers** on a modular PCB, connected to an embedded controller (e.g., nRF52832).  
+The architecture emphasizes **low power**, **low latency**, and **ease of integration** with mobile robots or sensor heads, enabling camera-free fiducial tracking even on resource-constrained platforms.
+
+
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
