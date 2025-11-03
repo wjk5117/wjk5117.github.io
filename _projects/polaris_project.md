@@ -97,26 +97,33 @@ We extensively evaluated **Polaris** across two robotic platforms (**robot car**
 - **Robust usability.** Reliable **ID + pose** under **occlusion, dust, low light**, and modest lateral misalignment, validating Polaris as a **camera-free complement** to visual fiducials.
 
 
-<!-- Two-figure layout: setup/platforms + end-to-end usability -->
-<div class="row">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid
-       loading="eager"
-       path="assets/img/polaris/experiment_setup.png"
-       title="Figure A — Sensing module and robotic platforms (robot car & mini car)"
-       class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid
-       loading="eager"
-       path="assets/img/polaris/e2e_setup.png"
-       title="Figure B — End-to-end usability: real-time ID + relative pose under degraded visibility"
-       class="img-fluid rounded z-depth-1" %}
+<!-- Figure A: setup/platforms -->
+<div class="mt-3">
+  {% include figure.liquid
+     loading="eager"
+     path="assets/img/polaris/experiment_setup.png"
+     title="Figure A — Sensing module and robotic platforms (robot car & mini car)"
+     class="img-fluid rounded z-depth-1" %}
+  <div class="caption mt-2">
+    Figure A — Sensing bar and test platforms.
   </div>
 </div>
-<div class="caption mt-2">
-  A: sensing bar and test platforms; B: end-to-end posture calibration through dust occlusion.
+
+<!-- spacing -->
+<hr class="my-4"/>
+
+<!-- Figure B: end-to-end usability -->
+<div class="mt-3">
+  {% include figure.liquid
+     loading="eager"
+     path="assets/img/polaris/e2e_setup.png"
+     title="Figure B — End-to-end usability: real-time ID + relative pose under degraded visibility"
+     class="img-fluid rounded z-depth-1" %}
+  <div class="caption mt-2">
+    Figure B — End-to-end posture calibration through dust occlusion.
+  </div>
 </div>
+
 
 ---
 
