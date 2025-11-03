@@ -15,15 +15,18 @@ related_publications: true
   <a class="btn btn-sm btn-outline-primary" href="https://www.youtube.com/watch?v=gdAEeNdMJk0" target="_blank">🎥 Demo of Polaris</a>
 </p>
 
-> **Polaris** is a **vision-free fiducial** based on a **magnetic constellation**: tiny passive disc magnets on the floor plus a lightweight **magnetometer array** on the robot. It **complements cameras** by preserving **precise pose** and **high-capacity IDs** under occlusion, dust, low light, or privacy constraints.
+> **Polaris** is a **vision-free fiducial system** built on a **magnetic constellation** of passive disc magnets and a lightweight **magnetometer array**.It provides **reliable relative pose estimation** and **high-capacity ID encoding** even under **occlusion, dust, low light,** and **privacy** constraints.
+The tags are **battery-free** and **low-cost**, making Polaris a practical **complement** to existing camera-based fiducials.
+
 
 ## Motivation — a complementary path when vision degrades
-Visual fiducials (e.g., AprilTag) can be impaired by **occlusion/visibility** issues (dust, occlusion, low light) and may raise **power/privacy** concerns.
-Magnetic fields are **not visibility-limited** and can pass through debris or coverings, offering a **low-power, camera-free** complementary signal.
+Vision-based fiducials (e.g., AprilTag) are sensitive to **visibility** (e.g., occlusion, low light) and can raise **power** and **privacy** concerns.  
+In contrast, magnetic sensing is **robust to occlusion** and penetrates common obstructions, providing a **low-power, camera-free** complementary signal that preserves **robust relative pose and high-capacity IDs** when vision degrades.
+
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/projects/polaris/occlusion_ironfillings.jpg" title="Camera fiducial under iron filings: detection collapses" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/occlusion_test.png" title="Camera fiducial fails under occlusion" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/projects/polaris/polaris_works_under_occlusion.jpg" title="Polaris still decodes and estimates pose under occlusion" class="img-fluid rounded z-depth-1" %}
