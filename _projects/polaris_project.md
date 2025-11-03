@@ -128,7 +128,37 @@ We extensively evaluated **Polaris** across two robotic platforms (**robot car**
 ---
 
 ## Publication
-**Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation.** *ACM MobiCom ’24, Washington, D.C., USA.* DOI: 10.1145/3636534.3690711
+Jike Wang, Yasha Iravantchi, Alanson Sample, Kang G. Shin, Xinbing Wang, and Dongyao Chen. 2024.  
+**Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation.**  
+*Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (ACM MobiCom ’24).*  
+Association for Computing Machinery, New York, NY, USA, 1560–1574.  
+DOI: [10.1145/3636534.3690711](https://doi.org/10.1145/3636534.3690711)
+
+<!-- Cite this work (collapsible) -->
+<details class="mt-2">
+  <summary><strong>📚 Cite this work (BibTeX)</strong></summary>
+  <div class="mt-2">
+    <pre id="polaris-bibtex" style="white-space: pre-wrap; word-break: break-word; background:#f8f9fa; padding:12px; border-radius:8px; border:1px solid #e5e7eb; font-size:0.9rem;">
+@inproceedings{wang2024polaris,
+  author    = {Jike Wang and Yasha Iravantchi and Alanson Sample and Kang G. Shin and Xinbing Wang and Dongyao Chen},
+  title     = {Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation},
+  booktitle = {Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (ACM MobiCom '24)},
+  year      = {2024},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  pages     = {1560--1574},
+  doi       = {10.1145/3636534.3690711},
+  url       = {https://doi.org/10.1145/3636534.3690711}
+}
+    </pre>
+    <button id="copy-bibtex" class="btn btn-sm btn-outline-primary" onclick="
+      navigator.clipboard.writeText(document.getElementById('polaris-bibtex').innerText).then(()=>{
+        const b=this; const old=b.innerHTML; b.innerHTML='Copied ✓'; setTimeout(()=>b.innerHTML=old,1200);
+      });
+    ">Copy BibTeX</button>
+  </div>
+</details>
+
 
 ---
 
