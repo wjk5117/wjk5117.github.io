@@ -78,7 +78,6 @@ The sensing bar integrates low-cost **Hall-effect magnetometers** on a modular P
 The architecture emphasizes **low power**, **low latency**, and **ease of integration** with mobile robots or sensor heads, enabling camera-free fiducial tracking even on resource-constrained platforms.
 
 
-
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
     {% include figure.liquid path="assets/projects/polaris/pipeline_derivative.jpg" title="Derivative-based peak detection + DDTW orientation alignment" class="img-fluid rounded z-depth-1" %}
@@ -93,20 +92,37 @@ The architecture emphasizes **low power**, **low latency**, and **ease of integr
 
 ---
 
-## Experiment results
-- **Pose & decoding.** Mean Euclidean error **0.58 mm** (STD 0.08 mm); mean heading error **0.997°** (STD 0.125°); BER ≈ **0.033** with 8-level MOSK on ESP32.  
-- **Tiny tags & frugal power.** **1.6×1.6 cm²** tags remain decodable; sensing + compute budgets fit miniature platforms; **25.08 mW** sensor bar (3 Hall-effect mags).
+## Experimental evaluation — platforms, setup, and key results
 
+We extensively evaluated **Polaris** across two robotic platforms (**robot car** and **mini car**) and a range of operating conditions (speed, height, lateral offsets, debris/coverings, and illumination).
+**Figure A** summarizes the sensing module and testbeds; **Figure B** shows the **end-to-end (E2E)** pipeline in operation—**ID + relative pose** streamed in real time under degraded visibility—demonstrating the system’s **usability**.
+
+
+### Key results
+- **Pose & decoding accuracy.** Mean Euclidean error **0.58 mm** (STD **0.08 mm**); mean heading error **0.997°** (STD **0.125°**). With **8-level MOSK**, the embedded decoder on **ESP32** achieves **BER ≈ 0.033**.  
+- **Tiny tags & frugal power.** Tags as small as **1.6 × 1.6 cm²** remain decodable; a **three-sensor** bar runs at **≈ 25.08 mW**, suitable for miniature or solar-powered robots.  
+- **Robust usability.** Reliable **ID + pose** under **occlusion, dust, low light**, and modest lateral misalignment, validating Polaris as a **camera-free complement** to visual fiducials.
+
+
+<!-- Two-figure layout: setup/platforms + end-to-end usability -->
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/projects/polaris/robot_scenes.jpg" title="Robot & miniature-platform evaluations" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid
+       loading="eager"
+       path="assets/projects/polaris/experimental_setup.png"
+       title="Figure A — Sensing module and robotic platforms (robot car & mini car)"
+       class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/projects/polaris/power_accuracy.jpg" title="Power and accuracy summaries" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid
+       loading="eager"
+       path="assets/projects/polaris/e2e_setup.png"
+       title="Figure B — End-to-end usability: real-time ID + relative pose under degraded visibility"
+       class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-<div class="caption">
-  Evaluated across headings, tag densities, template sizes, and real-world interferences (iron debris, dirt, water, etc.).
+<div class="caption mt-2">
+  A: sensing bar and test platforms; B: end-to-end posture calibration through dust occlusion.
 </div>
 
 ---
