@@ -97,14 +97,9 @@ We evaluated **METRO** with on-vehicle deployments across speeds, clearances, an
 
 ---
 
+
 ## Publication
-<!-- 用你的正式条目替换下面这行作者与页码 (如果你给我完整引用，我可替换成ACM官方格式) -->
-## Publication
-Jike Wang, Shanmu Wang, Yasha Iravantchi, Mingke Wang, Alanson Sample, Kang G. Shin, Xinbing Wang, Chenghu Zhou, and Dongyao Chen. 2024.  
-**METRO: Magnetic Road Markings for All-weather, Smart Roads.**  
-*Proceedings of the 21st ACM Conference on Embedded Networked Sensor Systems (SenSys ’23).*  
-Association for Computing Machinery, New York, NY, USA, 280–293.  
-DOI: [10.1145/3625687.3625809](https://doi.org/10.1145/3625687.3625809)
+Jike Wang, Shanmu Wang, Yasha Iravantchi, Mingke Wang, Alanson Sample, Kang G. Shin, Xinbing Wang, Chenghu Zhou, and Dongyao Chen. 2024. **METRO: Magnetic Road Markings for All-weather, Smart Roads.** *Proceedings of the 21st ACM Conference on Embedded Networked Sensor Systems (SenSys ’23).* Association for Computing Machinery, New York, NY, USA, 280–293. DOI: [10.1145/3625687.3625809](https://doi.org/10.1145/3625687.3625809)
 
 <!-- Cite this work (collapsible) -->
 <details class="mt-2">
