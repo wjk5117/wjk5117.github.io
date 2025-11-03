@@ -20,43 +20,41 @@ The tags are **battery-free** and **low-cost**, making Polaris a practical **com
 
 
 ## Motivation — a complementary path when vision degrades
-Vision-based fiducials (e.g., AprilTag) are sensitive to **visibility** (e.g., occlusion, low light) and can raise **power** and **privacy** concerns.  
-In contrast, magnetic sensing is **robust to occlusion** and penetrates common obstructions, providing a **low-power, camera-free** complementary signal that preserves **robust relative pose and high-capacity IDs** when vision degrades.
+Vision-based fiducials (e.g., AprilTag) are sensitive to **visibility** (e.g., occlusion, low light) and can raise **power** and **privacy** concerns. In contrast, magnetic sensing is **robust to occlusion** and penetrates common obstructions, providing a **low-power, camera-free** complementary signal that preserves **robust relative pose and high-capacity IDs** when vision degrades.
 
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/occlusion_test.png" title="Camera fiducial fails under occlusion" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/polaris/occlusion_test.png" title="Camera fiducial fails under occlusion" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/projects/polaris/polaris_works_under_occlusion.jpg" title="Polaris still decodes and estimates pose under occlusion" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/polaris/robustness_exp_polaris.png" title="Polaris still decodes ID and estimates pose under occlusion" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Left: camera-based fiducials fail with light occlusion. Right: Polaris remains readable, providing a complementary signal when vision is impaired.
+  Left: visual fiducials fail with light occlusion. Right: Polaris remains readable, providing a robust complementary signal when vision is impaired.
 </div>
 
 ---
 
 ## System at a glance
-Polaris is a **full-stack magnetic sensing system** with two components:  
-1) a compact **constellation tag** whose *magnet positions* and *polarity orientations* encode bits;  
-2) a **linear magnetometer array** and a lightweight pipeline that detects magnets, estimates orientation, reconstructs the tag, and outputs **ID + pose**.
+**Polaris** is a full-stack **magnetic fiducial** with two core components:  
+1) a compact **constellation tag** — MOSK-coded passive disc magnets where bits are carried by **spatial placement** and **polarity (N/S) orientations**;  
+2) a **linear magnetometer array** with a lightweight decoding pipeline that performs **magnetic field sampling → magnet detection & polarity inference → constellation reconstruction**, yielding **ID decoding and relative pose estimation**.
 
-<div class="row">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/projects/polaris/sensor_bar.jpg" title="Bar-shaped sensing module on the robot" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/projects/polaris/mosk_tag.jpg" title="MOSK tag: bits via dipole orientation" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/projects/polaris/capacity_compare.jpg" title="Capacity vs. visual tags (similar payload, smaller footprint)" class="img-fluid rounded z-depth-1" %}
+
+<div class="mt-3">
+  {% include figure.liquid
+     loading="eager"
+     path="assets/img/illustration_polaris.png"
+     title="Polaris overview: sensing module and MOSK-coded constellation tag"
+     class="img-fluid rounded z-depth-1" %}
+  <div class="caption mt-2">
+    Polaris sensing module reads MOSK-coded constellation tags to output ID and relative pose; comparable encoding capacity to visual tags, with camera-free operation.
   </div>
 </div>
-<div class="caption">
-  Left: compact sensor bar; Middle: MOSK encodes bits using magnet orientation; Right: similar capacity to popular visual tags at a fraction of the size.
-</div>
+
+
 
 ---
 
