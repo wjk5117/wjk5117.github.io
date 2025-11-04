@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Polaris — Vision-free Magnetic Fiducials
-description: A full-stack magnetic fiducial system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.
+description: A full-stack magnetic fiducial system for mobile robots.
 img: assets/img/illustration_polaris.png
 importance: 1
 category: work

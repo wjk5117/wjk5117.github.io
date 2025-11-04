@@ -1,7 +1,7 @@
 ---
 layout: page
 title: METRO — Magnetic Road Markings for All-weather Perception
-description: Passive magnetic tags and a low-cost magnetometer array that complement cameras for robust lane and symbol perception in adverse weather
+description: A robust road surface marking system using passive magnetic tags and a low-cost magnetometer array.
 img: assets/img/illustration_metro.png  # background image on the portfolio grid
 importance: 1
 category: work
@@ -70,7 +70,9 @@ Recover the embedded symbol/lane semantics for vehicle's guidance and control.
        class="img-fluid rounded z-depth-1 img-equal-cover" %}
   </div>
 </div>
-
+<div class="caption">
+  From left to right: encoding scheme; derivative-based peak detection; AMN wheel-noise cancellation.
+</div>
 ---
 ## System implementation
 **METRO** is implemented and deployed using commodity vehicles equipped with a **bumper-mounted magnetic sensing bar** and **reference sensors** near the wheel wells for adaptive noise calibration. The sensing bar integrates multiple **COTS triaxial magnetometers (MLX90393)** using a modular PCB design, connected to an embedded controller (Teensy 4.1) for high-rate sampling and onboard processing. Reference sensors continuously capture wheel-induced magnetic disturbances, which are adaptively canceled through AMN.  
