@@ -1,7 +1,7 @@
 ---
 layout: page
 title: METRO — Magnetic Road Markings for All-weather Perception
-description: Passive magnetic tags + a low-cost magnetometer array that complement cameras for robust lane and symbol perception in adverse weather
+description: Passive magnetic tags and a low-cost magnetometer array that complement cameras for robust lane and symbol perception in adverse weather
 img: assets/img/illustration_metro.png  # background image on the portfolio grid
 importance: 1
 category: work
@@ -13,97 +13,109 @@ related_publications: false
   <a class="btn btn-sm btn-outline-primary" href="https://github.com/wjk5117/METRO" target="_blank">🧑‍💻 Code of METRO</a>
 </p>
 
-> **METRO** encodes lane markings and transverse road symbols using **passive magnetic tags** and reads them with a **vehicle-mounted magnetometer array**. Magnetic sensing is **robust to visibility degradation** (rain/snow/fog/glare/occlusion) and **complements cameras/LiDAR** while remaining **low-cost** and deployable on real roads.
+> **METRO** encodes lane markings and transverse road symbols (e.g., arrow markings) using **passive magnetic tags** and reads them with a **vehicle-mounted magnetometer array**. Magnetic sensing is **robust to visibility degradation** (e.g., rain/snow/fog/occlusion) and **complements cameras/LiDAR** while remaining **low-cost** and deployable on real roads.
 
 ## Motivation — a complementary path when vision degrades
-Vision pipelines degrade in **rain, snow, glare, or occlusion**; lane paint can be **covered** or **worn**.  
-Magnetic fields are **not visibility-limited** and can be sensed **reliably and efficiently** as an auxiliary signal, improving the robustness of lane and symbol perception.
+Autonomous vehicles heavily rely on cameras and LiDAR to perceive road markings for lane keeping and navigation. However, existing vision pipelines degrade in **rain, snow, glare, or occlusion**; lane paint can be **covered** or **worn**. In contrast, magnetic fields are resilient to occlusion and can be sensed **reliably and efficiently**, thus improving the robustness of lane and symbol perception.
 
 ---
 
 ## System at a glance
 **METRO** is a full-stack **magnetic road-marking system** with two core components:  
-1) **Passive encoding** — small NdFeB magnets embedded/attached near lane paint encode lanes & transverse symbols via **polarity** and **spacing ratios**;  
-2) **On-vehicle sensing & decoding** — a **1-D magnetometer bar** under the front bumper samples tri-axial fields at high rate and a lightweight pipeline detects peaks, recovers **distance ratios**, and outputs **machine-readable lane/symbol semantics**.
+1) **Passive encoding** — passive and durable NdFeB magnets embedded/attached near lane paint encode lanes & transverse symbols via **polarity** and **spacing ratios**;  
+2) **On-vehicle sensing & decoding** — a **1-D automotive-grade magnetometer array** under the front bumper samples tri-axial fields at high rate and a lightweight pipeline detects each on-road magnet, recovers **distance ratios**, and outputs **machine-readable lane/symbol semantics**.
 
-<div class="row">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/projects/metro/array_mount.jpg" title="Sensor bar mounted under the bumper" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/projects/metro/tags_topview.jpg" title="Passive magnetic tags for lanes & transverse symbols" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/projects/metro/field_deploy.jpg" title="Deployment on public roads" class="img-fluid rounded z-depth-1" %}
+<!-- Figure: system overview -->
+<div class="mt-3">
+  {% include figure.liquid
+     loading="eager"
+     path="assets/img/metro/illustration_metro.png"
+     title="METRO system"
+     class="img-fluid rounded z-depth-1" %}
+  <div class="caption mt-2">
+    METRO comprised of highly deployable, all-weather magnetic dots and a novel sensor array.
   </div>
 </div>
-<div class="caption">
-  Left: modular magnetometer bar; Middle: encoded tags (lanes & symbols); Right: real-road deployment.
-</div>
+
 
 ---
 
 ## How METRO works — design & innovations
-**Encode.** Arrange magnets so that **polarity** and **inter-magnet spacing ratios** jointly encode lanes and transverse symbols (arrows/text/icons).  
-**Sense.** Sample tri-axial fields along the bar; use **first-derivative zero-crossings** to detect peaks/valleys and infer magnet **polarities**; align samples using vehicle **speed/heading** (e.g., CAN) to obtain **geometry-invariant distance ratios**.  
-**Denoise.** Run **AMN — Adaptive Magnetic-field Neutralization** with reference sensors near wheel wells; an LMS-style filter cancels **wheel-induced periodic noise** without heavy computation.  
-**Decode.** Recover the symbol/lane semantics and expose **machine-readable outputs** for guidance and control.
+**Encode.** 
+Arrange magnets so that **polarity** and **inter-magnet spacing ratios** jointly encode lanes and transverse symbols (arrows/text). 
+
+**Sense.**
+Sample tri-axial fields along the bar; use **first-derivative zero-crossings** to detect peaks/valleys and infer magnet **polarities**; align samples using vehicle **speed/heading** (e.g., CAN bus) to obtain **reliable distance ratios**.
+
+**Denoise.**
+Run **AMN — Adaptive Magnetic-field Neutralization** with reference sensors near wheel wells; an LMS-style filter cancels **wheel-induced periodic noise** with lightweight and real-time computation.
+
+**Decode.**
+Recover the embedded symbol/lane semantics for vehicle's guidance and control.
+<style>
+  .img-equal-cover {
+    width: 100%;
+    height: 240px;            /* 统一高度 */
+    object-fit: cover;        /* 可能裁剪以铺满 */
+  }
+</style>
 
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/projects/metro/pipeline_derivative.jpg" title="Derivative-based peak detection & ratio recovery" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/metro/encode.png"
+       title="Encode with polarity + distance ratios"
+       class="img-fluid rounded z-depth-1 img-equal-cover" %}
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/projects/metro/amn_cancel.jpg" title="AMN wheel-noise cancellation (reference sensors + LMS)" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/metro/peak_detection.png"
+       title="Sense with derivative-based peak detection"
+       class="img-fluid rounded z-depth-1 img-equal-cover" %}
+  </div>
+  <div class="col-sm-4 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/metro/LMS.png"
+       title="AMN wheel-noise cancellation (reference sensors + LMS)"
+       class="img-fluid rounded z-depth-1 img-equal-cover" %}
   </div>
 </div>
-<div class="caption">
-  Peak detection via derivative zero-crossings → ratio decoding with speed/heading alignment; AMN suppresses wheel-induced magnetic noise.
+
+---
+## System implementation
+**METRO** is implemented and deployed using commodity vehicles equipped with a **bumper-mounted magnetic sensing bar** and **reference sensors** near the wheel wells for adaptive noise calibration. The sensing bar integrates multiple **COTS triaxial magnetometers (MLX90393)** using a modular PCB design, connected to an embedded controller (Teensy 4.1) for high-rate sampling and onboard processing. Reference sensors continuously capture wheel-induced magnetic disturbances, which are adaptively canceled through AMN.  
+
+For deployment, passive magnetic tags (e.g., cubic NdFeB magnets) are installed adjacent to **painted lane markings** such as **speed limits, divider lines, and stop lines**, fully compatible with standard roadwork procedures. A 3D-printed protective shell shields the magnets from environmental wear and tear. 
+This design enables **non-invasive installation**, **low maintenance**, and **high durability**.
+
+<div class="mt-3">
+  {% include figure.liquid
+     loading="eager"
+     path="assets/img/metro/system_deployment.png"
+     title="Implementation and deployment of METRO"
+     class="img-fluid rounded z-depth-1" %}
+  <div class="caption mt-2">
+    Implementation and deployment of METRO: A–B show the sensing array installation on vehicles; C–D show reference sensors for wheel-noise calibration; E–G show real-road tag deployments; H–J show tag geometry and dimensions.
+  </div>
 </div>
+
 
 ---
 
 ## Experimental evaluation — setups and key results
-
-We evaluated **METRO** with on-vehicle deployments across speeds, clearances, and adverse weather, and compared against a camera baseline.
+We conducted extensive **on-vehicle field tests** covering a wide range of **vehicle speeds**, **sensor–ground clearances**, and **adverse weather/visibility** conditions (snow, rain, fog, glare), and compared METRO against a **camera baseline** on public-road deployments. Across these scenarios, METRO achieves an **overall detection/interpretation rate of >96%**, validating its practicality and robustness for real-world road marking perception.
 
 ### Key results (at a glance)
-- **All-weather robustness.** Stable decoding through **snow cover/glare/fog/rain**, where visual lane detection degrades.  
-- **Speed & clearance tolerance.** **Distance-ratio decoding** remains reliable across typical driving speeds and bumper clearances.  
-- **Deployability.** Passive tags + COTS sensors; bumper-width modular PCB bar supports **low-cost installation & maintenance**.
-
-<!-- Figure A: performance across speed/clearance -->
-<div class="mt-3">
-  {% include figure.liquid
-     loading="eager"
-     path="assets/projects/metro/speed_perf.jpg"
-     title="Performance across vehicle speeds"
-     class="img-fluid rounded z-depth-1" %}
-</div>
-
-<hr class="my-4"/>
-
-<!-- Figure B: adverse weather comparison -->
-<div class="mt-3">
-  {% include figure.liquid
-     loading="eager"
-     path="assets/projects/metro/snow_vs_cam.jpg"
-     title="Snow cover: METRO vs. a camera baseline"
-     class="img-fluid rounded z-depth-1" %}
-</div>
-<div class="caption mt-2">
-  METRO preserves machine-readable lane/symbol semantics under visibility degradation, complementing the camera baseline.
-</div>
+- **All-weather reliability.** Stable decoding under **snow cover, rain, fog, and glare**, where the camera baseline degrades.
+- **Speed & clearance tolerance.** **Distance-ratio decoding** remains consistent across typical driving speeds (up to 55 mph) and bumper clearances (up to 35 cm).
+- **Noise resilience.** **AMN** (reference sensors + LMS) effectively suppresses **wheel-induced periodic noise**, enabling lightweight on-vehicle processing.
+- **Deployability.** **Passive tags** and **COTS magnetometers** on a bumper-width modular PCB support **low-cost installation and maintenance** for long-term real-road scenarios.
 
 ---
-
 
 ## Publication
 Jike Wang, Shanmu Wang, Yasha Iravantchi, Mingke Wang, Alanson Sample, Kang G. Shin, Xinbing Wang, Chenghu Zhou, and Dongyao Chen. 2024. **METRO: Magnetic Road Markings for All-weather, Smart Roads.** *Proceedings of the 21st ACM Conference on Embedded Networked Sensor Systems (SenSys ’23).* Association for Computing Machinery, New York, NY, USA, 280–293. DOI: [10.1145/3625687.3625809](https://doi.org/10.1145/3625687.3625809)
 
 <!-- Cite this work (collapsible) -->
 <details class="mt-2">
-  <summary><strong>📚 Cite this work (BibTeX)</strong></summary>
+  <summary><strong>📚 Cite our work (BibTeX)</strong></summary>
   <div class="mt-2">
     <pre id="metro-bibtex" style="white-space: pre-wrap; word-break: break-word; background:#f8f9fa; padding:12px; border-radius:8px; border:1px solid #e5e7eb; font-size:0.9rem;">
 @inproceedings{10.1145/3625687.3625809,
