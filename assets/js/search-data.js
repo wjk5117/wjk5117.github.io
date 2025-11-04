@@ -427,7 +427,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-metro-magnetic-road-markings-for-all-weather-perception",
           title: 'METRO — Magnetic Road Markings for All-weather Perception',
-          description: "Passive magnetic tags + a low-cost magnetometer array that complement cameras for robust lane and symbol perception in adverse weather",
+          description: "Passive magnetic tags and a low-cost magnetometer array that complement cameras for robust lane and symbol perception in adverse weather",
           section: "Projects",handler: () => {
               window.location.href = "/projects/metro_project/";
             },},{id: "projects-polaris-vision-free-magnetic-fiducials",
