@@ -54,31 +54,24 @@ Run **AMN — Adaptive Magnetic-field Neutralization** with reference sensors ne
 Recover the embedded symbol/lane semantics for vehicle's guidance and control.
 
 <style>
-  /* 等高：不裁剪（留白），更安全 */
   .img-equal { width:100% !important; height:240px !important; object-fit:contain; }
-
-  /* 等高：铺满裁剪，视觉更整齐 */
-  .img-equal-cover { width:100% !important; height:240px !important; object-fit:cover; }
-
-  /* 可选：让 figure 自身不要限制尺寸 */
-  .fig-reset figure { width:100%; margin:0; }
 </style>
 
-<div class="row justify-content-sm-center fig-reset">
+<div class="row justify-content-sm-center">
   <div class="col-sm-4 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/metro/encode.png"
        title="Encode with polarity + distance ratios"
-       class="img-fluid rounded z-depth-1 img-equal-cover" %}
+       class="img-fluid rounded z-depth-1 img-equal" %}
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/metro/peak_detection.png"
        title="Sense with derivative-based peak detection"
-       class="img-fluid rounded z-depth-1 img-equal-cover" %}
+       class="img-fluid rounded z-depth-1 img-equal" %}
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/metro/LMS.png"
        title="AMN wheel-noise cancellation (reference sensors + LMS)"
-       class="img-fluid rounded z-depth-1 img-equal-cover" %}
+       class="img-fluid rounded z-depth-1 img-equal" %}
   </div>
 </div>
 <div class="caption">
