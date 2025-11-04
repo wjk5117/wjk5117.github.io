@@ -53,7 +53,18 @@ Run **AMN — Adaptive Magnetic-field Neutralization** with reference sensors ne
 **Decode.**
 Recover the embedded symbol/lane semantics for vehicle's guidance and control.
 
-<div class="row justify-content-sm-center">
+<style>
+  /* 等高：不裁剪（留白），更安全 */
+  .img-equal { width:100% !important; height:240px !important; object-fit:contain; }
+
+  /* 等高：铺满裁剪，视觉更整齐 */
+  .img-equal-cover { width:100% !important; height:240px !important; object-fit:cover; }
+
+  /* 可选：让 figure 自身不要限制尺寸 */
+  .fig-reset figure { width:100%; margin:0; }
+</style>
+
+<div class="row justify-content-sm-center fig-reset">
   <div class="col-sm-4 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/metro/encode.png"
        title="Encode with polarity + distance ratios"
@@ -73,6 +84,8 @@ Recover the embedded symbol/lane semantics for vehicle's guidance and control.
 <div class="caption">
   From left to right: encoding scheme; derivative-based peak detection; AMN wheel-noise cancellation.
 </div>
+
+
 ---
 ## System implementation
 **METRO** is implemented and deployed using commodity vehicles equipped with a **bumper-mounted magnetic sensing bar** and **reference sensors** near the wheel wells for adaptive noise calibration. The sensing bar integrates multiple **COTS triaxial magnetometers (MLX90393)** using a modular PCB design, connected to an embedded controller (Teensy 4.1) for high-rate sampling and onboard processing. Reference sensors continuously capture wheel-induced magnetic disturbances, which are adaptively canceled through AMN.  
