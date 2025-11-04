@@ -105,7 +105,7 @@ We extensively evaluated **Polaris** across two robotic platforms (**robot car**
      title="Figure A — Sensing module and robotic platforms (robot car & mini car)"
      class="img-fluid rounded z-depth-1" %}
   <div class="caption mt-2">
-    Figure A — Sensing bar and test platforms.
+    Experiment setup on two robotic platforms.
   </div>
 </div>
 
@@ -120,7 +120,7 @@ We extensively evaluated **Polaris** across two robotic platforms (**robot car**
      title="Figure B — End-to-end usability: real-time ID + relative pose under degraded visibility"
      class="img-fluid rounded z-depth-1" %}
   <div class="caption mt-2">
-    Figure B — End-to-end posture calibration through dust occlusion.
+    End-to-end posture calibration of a robot car through dust occlusion.
   </div>
 </div>
 
