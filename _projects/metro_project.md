@@ -52,13 +52,6 @@ Run **AMN — Adaptive Magnetic-field Neutralization** with reference sensors ne
 
 **Decode.**
 Recover the embedded symbol/lane semantics for vehicle's guidance and control.
-<style>
-  .img-equal-cover {
-    width: 100%;
-    height: 240px;            /* 统一高度 */
-    object-fit: cover;        /* 可能裁剪以铺满 */
-  }
-</style>
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-4 mt-3 mt-md-0">
