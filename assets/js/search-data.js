@@ -425,14 +425,19 @@ ninja.data = [{
           section: "News",},{id: "news-trophy-honored-to-receive-the-best-presentation-award-at-the-rising-star-forum-aiotsys-2025-appreciate-our-team-s-great-work",
           title: ':trophy: Honored to receive the Best Presentation Award at the Rising Star Forum,...',
           description: "",
-          section: "News",},{id: "projects-metro-magnetic-road-markings-for-all-weather-perception",
+          section: "News",},{id: "projects-dualstrike-magnetic-eavesdropping-amp-injection-on-hall-effect-keyboards",
+          title: 'DualStrike — Magnetic Eavesdropping &amp;amp; Injection on Hall-effect Keyboards',
+          description: "DualStrike demonstrates non-invasive keystroke eavesdropping and per-key injection attacks on commodity Hall-effect keyboards.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dualstrike_project/";
+            },},{id: "projects-metro-magnetic-road-markings-for-all-weather-perception",
           title: 'METRO — Magnetic Road Markings for All-weather Perception',
-          description: "Passive magnetic tags and a low-cost magnetometer array that complement cameras for robust lane and symbol perception in adverse weather",
+          description: "A robust road surface marking system using passive magnetic tags and a low-cost magnetometer array.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/metro_project/";
             },},{id: "projects-polaris-vision-free-magnetic-fiducials",
           title: 'Polaris — Vision-free Magnetic Fiducials',
-          description: "A full-stack magnetic fiducial system that complements vision by enabling pose estimation and rich data encoding when cameras struggle.",
+          description: "A full-stack magnetic fiducial system for mobile robots.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/polaris_project/";
             },},{
