@@ -26,11 +26,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a fifth-year Ph.D. student in Computer Science at [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/), fortunate to be advised by [Prof. Dongyao Chen](https://chendy.tech/) at the Sensing Intelligence & System Lab (SISL).
+I am a fifth-year Ph.D. student in Computer Science at [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/), fortunate to be advised by [Prof. Dongyao Chen](https://chendy.tech/) at the Sensing Intelligence & System Lab (SISL). I received my B.E. in Software Engineering from [Xidian University](https://www.xidian.edu.cn/), Xi'an, China, in 2021.
 
-My research lies at the intersection of wireless sensing, artificial Internet of Things (AIoT), and mobile robotics.
-I focus on building robust and energy-efficient sensing systems that enable reliable perception in complex and dynamic environments.
-Recently, I have been exploring magnetic sensing as a low-cost, low-power, and highly robust modality for robots to perceive the world when cameras and traditional sensors fail.
+My research interests include wireless sensing, artificial Internet of Things (AIoT), and mobile robotics.
+I build robust and energy-efficient sensing systems that enable reliable perception in complex and dynamic environments for cyber-physical systems.
+Recently, I have been exploring **magnetic sensing** as a low-cost, low-power, and highly robust modality to perceive the environment when cameras or conventional sensors fail (e.g., under occlusion or NLoS conditions).
 Our works have been published at top international venues such as ACM SenSys and ACM MobiCom.
 
 
