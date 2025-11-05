@@ -437,7 +437,7 @@ ninja.data = [{
               window.location.href = "/projects/metro_project/";
             },},{id: "projects-polaris-vision-free-magnetic-fiducials",
           title: 'Polaris — Vision-free Magnetic Fiducials',
-          description: "A full-stack magnetic fiducial system for mobile robots.",
+          description: "A full-stack magnetic fiducial system for mobile robots, providing reliable pose estimation and high-capacity ID encoding capabilities.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/polaris_project/";
             },},{
