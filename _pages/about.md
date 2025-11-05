@@ -28,7 +28,7 @@ latest_posts:
 
 I am a fifth-year Ph.D. student in Computer Science at [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/), fortunate to be advised by [Prof. Dongyao Chen](https://chendy.tech/) at the Sensing Intelligence & System Lab (SISL). I received my B.E. in Software Engineering from [Xidian University](https://www.xidian.edu.cn/), Xi'an, China, in 2021.
 
-My research interests include wireless sensing, artificial Internet of Things (AIoT), and mobile robotics.
+My research interests include **wireless sensing**, **artificial Internet of Things (AIoT)**, and **mobile robotics**.
 I build robust and energy-efficient sensing systems that enable reliable perception in complex and dynamic environments for cyber-physical systems.
 Recently, I have been exploring **magnetic sensing** as a low-cost, low-power, and highly robust modality to perceive the environment when cameras or conventional sensors fail (e.g., under occlusion or NLoS conditions).
 Our works have been published at top international venues such as ACM SenSys and ACM MobiCom.
