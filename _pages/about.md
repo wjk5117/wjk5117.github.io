@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Ph.D. Student in Computer Science at SJTU · AIoT & Wireless Sensing
+subtitle: Ph.D. Student at SJTU · AIoT & Wireless Sensing
 
 profile:
   align: right
