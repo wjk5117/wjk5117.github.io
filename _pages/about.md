@@ -9,7 +9,7 @@ profile:
   image: jike_photo.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Room 1-406, SEIEE, SJTU</p>
+    <p>Bldg 1-406, SEIEE, SJTU</p>
     <p>800 Dongchuan Rd., Shanghai</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
