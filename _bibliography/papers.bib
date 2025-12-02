@@ -3,8 +3,25 @@
 
 @string{aps = {American Physical Society,}}
 
+
+@inproceedings{chen2026dualstrike,
+  abbr         = {NDSS 2026},
+  title        = {DualStrike: Accurate, Real-time Eavesdropping and Injection of Keystrokes on Commodity Keyboards},
+  author       = {Chen, Xiaomeng and Wang, Jike and Chen, Zhenyu and Chen, Qi Alfred and Wang, Xinbing and Chen, Dongyao},
+  booktitle    = {Network and Distributed Systems Security (NDSS) Symposium},
+  year         = {2026},
+  abstract     = {We discover that enabling both eavesdropping and non-invasive, per-key injection is viable on keyboards, in particular, the fast-emerging commodity Hall-effect keyboards. This paper introduces DualStrike, a new attack system that allows attackers to remotely listen to victim input and control any key on a Hall-effect keyboard. This capability opens doors to severe attacks (e.g., file deletion, private key theft, and tampering) based on the victim's input and context, all without requiring hardware or software modifications to the victim's computer. We present several key innovations in DualStrike, including a novel, compact electromagnet-based hardware design for high-frequency magnetic spoofing, a synchronization-free attack scheme, and a magnetometer-based listening mechanism using commercial off-the-shelf components. Our real-world experiments demonstrate that DualStrike can reliably compromise arbitrary keys across six recent Hall-effect keyboard models. Specifically, DualStrike achieves over 98.9\% keystroke injection accuracy across all tested models. In an end-to-end test, the eavesdropping module achieves a high listening accuracy (i.e., above 99\%). To improve the robustness of DualStrike, we implement a calibration algorithm to account for keyboard displacement, allowing it to maintain 98.5\% injection accuracy even with offsets up to 4 cm. We also identified DualStrike's immunity to existing magnetic shielding mechanisms and proposed a novel shielding approach for Hall-effect keyboards.},
+  pdf          = {DualStrike_NDSS26.pdf},
+  preview      = {DualStrike_fig.png},
+  website      = {https://sites.google.com/view/magkey-anonymous?usp=sharing},
+  bibtex_show  = {true},
+  selected     = {true}
+}
+
+
+
 @inproceedings{10.1145/3625687.3625809,
-abbr={SenSys'23},
+abbr={SenSys 2023},
 author = {Wang, Jike and Wang, Shanmu and Iravantchi, Yasha and Wang, Mingke and Sample, Alanson and Shin, Kang G. and Wang, Xinbing and Zhou, Chenghu and Chen, Dongyao},
 title = {METRO: Magnetic Road Markings for All-weather, Smart Roads},
 year = {2024},
@@ -28,7 +45,7 @@ selected={true}
 
 
 @inproceedings{10.1145/3636534.3690711,
-abbr={MobiCom'24},
+abbr={MobiCom 2024},
 author = {Wang, Jike and Iravantchi, Yasha and Sample, Alanson and Shin, Kang G. and Wang, Xinbing and Chen, Dongyao},
 title = {Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation},
 year = {2024},
@@ -52,7 +69,7 @@ selected={true}
 }
 
 @inproceedings{10.1145/3662007.3663885,
-abbr={AdaAIoTSys'24},
+abbr={AdaAIoTSys 2024},
 author = {Chen, Zhenyu and Wang, Jike and Chen, Dongyao},
 title = {Demo: Implementation and Benchmark of Magnetic Tracking on Mobile Platforms},
 year = {2024},
