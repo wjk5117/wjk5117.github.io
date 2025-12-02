@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:tada: Our paper **DualStrike** is accepted to the **NDSS Symposium 2026**. Congrats to Xiaomeng and the team!
+:tada: Our paper **DualStrike** is accepted to the **NDSS Symposium 2026**. Congrats to Xiaomeng!
