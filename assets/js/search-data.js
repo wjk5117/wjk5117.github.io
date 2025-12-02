@@ -56,7 +56,7 @@ ninja.data = [{
           section: "News",},{id: "news-smile-served-on-the-acm-mobicom-2025-artifact-evaluation-committee",
           title: ':smile: Served on the ACM MobiCom 2025 Artifact Evaluation Committee.',
           description: "",
-          section: "News",},{id: "news-tada-our-paper-dualstrike-is-accepted-to-the-ndss-symposium-2026-congrats-to-xiaomeng-and-the-team",
+          section: "News",},{id: "news-tada-our-paper-dualstrike-is-accepted-to-the-ndss-symposium-2026-congrats-to-xiaomeng",
           title: ':tada: Our paper DualStrike is accepted to the NDSS Symposium 2026. Congrats to...',
           description: "",
           section: "News",},{id: "news-trophy-honored-to-receive-the-best-presentation-award-at-the-rising-star-forum-aiotsys-2025-appreciate-our-team-s-great-work",
