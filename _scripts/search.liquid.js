@@ -309,6 +309,8 @@ ninja.data = [
       },
     {%- endfor -%}
   {%- endif -%}
+
+  {%- comment -%}
   {%- if site.enable_darkmode -%}
     {
       id: 'light-theme',
@@ -338,4 +340,5 @@ ninja.data = [
       },
     },
   {%- endif -%}
+  {%- endcomment -%}
 ];
