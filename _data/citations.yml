@@ -1,15 +1,15 @@
 metadata:
-  last_updated: '2026-03-04'
+  last_updated: '2026-05-04'
 papers:
   L90n6MUAAAAJ:2osOgNQ5qMEC:
-    citations: 4
+    citations: 5
     title: 'METRO: Magnetic Road Markings for All-weather, Smart Roads'
     year: '2023'
   L90n6MUAAAAJ:9yKSN-GCB0IC:
-    citations: 2
+    citations: 3
     title: Implementation and Benchmark of Magnetic Tracking on Mobile Platforms
     year: '2024'
   L90n6MUAAAAJ:d1gkVwhDpl0C:
-    citations: 0
+    citations: 1
     title: 'Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation'
     year: '2024'
