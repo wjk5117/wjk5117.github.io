@@ -60,6 +60,13 @@ ninja.data = [{
           window.open("https://github.com/wjk5117", "_blank");
         },
       },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/www.linkedin.com/in/jike-wang-ba1815186", "_blank");
+        },
+      },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
