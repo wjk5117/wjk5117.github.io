@@ -3,27 +3,31 @@
 
 @string{aps = {American Physical Society,}}
 
-@inproceedings{10.1145/3774906.3802749,
-  abbr={SenSys 2026},
-  author = {Wang, Jike and Iravantchi, Yasha and Wang, Mingke and Sample, Alanson and Shin, Kang G. and Wang, Xinbing and Chen, Dongyao},
-  title = {MagLens: Bringing Mobile, Fine-Grained Imaging to Ferrous Building Structures},
-  year = {2026},
-  isbn = {9798400723094},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3774906.3802749},
-  doi = {10.1145/3774906.3802749},
-  abstract = {Fine-grained inspection of ferrous structures, such as steel rebars and iron pipes, is essential for ensuring structural health and integrity. Existing non-destructive imaging techniques often suffer from coarse spatial resolution, high operational costs, and limited mobility support, which restrict their practical deployment. We present MagLens, a mobile and cost-effective imaging system for inspecting ferrous structures such as rebars, metal studs, and iron pipes. Leveraging high-sensitivity commercial-off-the-shelf magnetometers, MagLens introduces a synthetic aperture of magnetic sensors (SAMS) together with a physics-informed neural imaging pipeline trained on synthetic data, enabling robust contour reconstruction and depth estimation with minimal effort. Results show that MagLens achieves contour reconstruction errors within 1 mm and depth estimation errors below 0.5 cm.},
-  bibtex_show = {true},
-  booktitle = {Proceedings of the ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems},
-  numpages = {15},
-  location = {Saint Malo, France},
-  series = {SenSys '26},
-  pdf = {MagLens_SenSys26.pdf},
-  preview = {MagLens_fig.png},
-  selected = {true}
-}
 
+@inproceedings{wang2026maglens,
+abbr={SenSys 2026},
+author = {Wang, Jike and Iravantchi, Yasha and Wang, Mingke and Sample, Alanson and Shin, Kang Geun and Wang, Xinbing and Chen, Dongyao},
+title = {MagLens: Bringing Mobile, Fine-Grained Imaging to Ferrous Building Structures},
+year = {2026},
+isbn = {9798400723094},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3774906.3802749},
+doi = {10.1145/3774906.3802749},
+abstract = {Fine-grained inspection of ferrous structures, such as steel rebars and iron pipes, is essential for ensuring structural health/integrity. However, existing non-destructive imaging techniques often suffer from coarse spatial resolution, high operational costs, and limited mobility support, hence severely restricting their practical deployment. For example, ground-penetrating radar (GPR), constrained by its operating wavelength, cannot resolve sub-centimeter features or recover fine contours of embedded ferrous structures. We present MagLens, a mobile and cost-effective imaging system for inspecting ferrous structures, such as rebars, metal studs, and iron pipes. Leveraging high-sensitivity commercial-off-the-shelf (COTS) magnetometers, MagLens introduces two key designs: (1) a novel synthetic aperture of magnetic sensors (SAMS) that combines a compact hardware, a rotation-based scanning module to enhance spatial coverage and an optional pre-magnetization module for extending the sensing range; and (2) a physics-informed neural imaging pipeline trained on synthetic data, enabling robust contour reconstruction and depth estimation with minimal effort. By capturing precise cross-sectional contour variations, MagLens can achieve corrosion assessment. We evaluate MagLens in diverse real-world settings using rebars as a representative structural material, achieving high-fidelity imaging that captures fine-grained geometries, e.g., bending, intersecting, and parallel layouts. MagLens’ efficacy is also tested on iron pipes, metal studs, and irregular objects, e.g., garden shears, not seen during the training phase. Results show that MagLens achieves contour reconstruction errors within 1&nbsp;mm and depth estimation errors below 0.5&nbsp;cm.},
+booktitle = {Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems},
+pages = {347–361},
+numpages = {15},
+bibtex_show = {true},
+keywords = {Magnetic Sensing; Magnetic Imaging; Structure Inspection},
+location = {
+},
+series = {SenSys '26},
+pdf = {MagLens_SenSys26.pdf},
+video={https://www.youtube.com/watch?v=O8RVni54Cvo},
+preview = {MagLens_fig.png},
+selected = {true}
+}
 
 @inproceedings{chen2026dualstrike,
   abbr         = {NDSS 2026},
@@ -40,7 +44,7 @@
 }
 
 
-@inproceedings{10.1145/3636534.3690711,
+@inproceedings{wang2024polaris,
 abbr={MobiCom 2024},
 author = {Wang, Jike and Iravantchi, Yasha and Sample, Alanson and Shin, Kang G. and Wang, Xinbing and Chen, Dongyao},
 title = {Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation},
@@ -66,7 +70,7 @@ selected={true}
 
 
 
-@inproceedings{10.1145/3662007.3663885,
+@inproceedings{wang2024demo,
 abbr={AdaAIoTSys 2024},
 author = {Chen, Zhenyu and Wang, Jike and Chen, Dongyao},
 title = {Demo: Implementation and Benchmark of Magnetic Tracking on Mobile Platforms},
@@ -90,7 +94,7 @@ selected={false}
 }
 
 
-@inproceedings{10.1145/3625687.3625809,
+@inproceedings{wang2023metro,
 abbr={SenSys 2023},
 author = {Wang, Jike and Wang, Shanmu and Iravantchi, Yasha and Wang, Mingke and Sample, Alanson and Shin, Kang G. and Wang, Xinbing and Zhou, Chenghu and Chen, Dongyao},
 title = {METRO: Magnetic Road Markings for All-weather, Smart Roads},
