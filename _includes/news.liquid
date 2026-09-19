@@ -4,7 +4,10 @@
     <div
       class="table-responsive"
       {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+        style="max-height: min(24rem, 60vh); overflow-y: auto; scrollbar-gutter: stable; -webkit-overflow-scrolling: touch;"
+        tabindex="0"
+        role="region"
+        aria-label="Recent news, scroll to read more"
       {% endif %}
     >
       <table class="table table-sm table-borderless">
