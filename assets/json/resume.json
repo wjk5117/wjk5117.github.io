@@ -1,32 +1,23 @@
-
 {
   "basics": {
     "name": "Jike Wang",
-    "label": "Ph.D. Candidate",
+    "label": "Incoming Postdoctoral Researcher at SMU",
     "image": "",
-    "email": "jikewang@sjtu.edu.cn",
-    "phone": "",
+    "email": "wjkldp@gmail.com",
+    "phone": "+86 13186082516",
     "url": "https://wjk5117.github.io/",
-    "summary": "My research focuses on robust, low-power sensing systems for intelligent robots and AIoT platforms operating in complex real-world environments. By combining wireless sensing, mobile robotics, and embedded intelligence, I aim to enable reliable perception and autonomy under occlusion, interference, and resource constraints. A central theme of my work is magnetic sensing for real-world autonomy, including METRO for all-weather road-marking perception, Polaris for vision-free robot pose estimation, and MagLens for mobile fine-grained imaging of hidden ferrous structures.",
-    "location": {
-      "address": "800 Dongchuan Rd., Minhang District",
-      "postalCode": "200240",
-      "city": "Shanghai",
-      "countryCode": "CN",
-      "region": "Shanghai"
-    },
+    "summary": "My research is driven by the goal of enabling reliable perception and autonomy for intelligent systems in the real world. I focus on building robust, low-power sensing systems for intelligent robots and AIoT platforms that can operate effectively in complex environments where conventional vision-based approaches often break down. By combining wireless sensing, mobile robotics, and embedded intelligence, I aim to expand the sensing frontier for real-world autonomy under occlusion, interference, and resource constraints. A central theme of my work is magnetic sensing, a modality inherently resilient to occlusion, lighting variation, and wireless interference. Along this direction, our team developed METRO for all-weather road-marking perception, Polaris, a vision-free magnetic fiducial system for accurate robot pose estimation, and MagLens for mobile fine-grained imaging of hidden ferrous structures. Our work has appeared at leading international venues, including ACM MobiCom, ACM SenSys, and NDSS Symposium.",
     "profiles": []
   },
-
   "education": [
     {
       "institution": "Shanghai Jiao Tong University",
       "location": "Shanghai, China",
-      "url": "",
+      "url": "https://www.sjtu.edu.cn/",
       "area": "Computer Science and Technology",
-      "studyType": "Ph.D. Candidate",
+      "studyType": "Ph.D.",
       "startDate": "2021-09",
-      "endDate": "",
+      "endDate": "2026-06",
       "score": "",
       "summary": "Research Interests: Artificial Internet of Things (AIoT), Wireless Sensing, and Mobile Robotics. Advisor: Prof. Dongyao Chen.",
       "courses": []
@@ -34,7 +25,7 @@
     {
       "institution": "Xidian University",
       "location": "Shaanxi, China",
-      "url": "",
+      "url": "https://www.xidian.edu.cn/",
       "area": "Software Engineering",
       "studyType": "B.S.",
       "startDate": "2017-09",
@@ -44,7 +35,6 @@
       "courses": []
     }
   ],
-
   "publications": [
     {
       "name": "MagLens: Bringing Mobile, Fine-Grained Imaging to Ferrous Building Structures",
@@ -54,11 +44,32 @@
       "summary": "Jike Wang, Yasha Iravantchi, Mingke Wang, Alanson Sample, Kang G. Shin, Xinbing Wang, and Dongyao Chen."
     },
     {
+      "name": "Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation",
+      "publisher": "Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (MobiCom 2024)",
+      "releaseDate": "2024",
+      "url": "",
+      "summary": "Jike Wang, Yasha Iravantchi, Alanson Sample, Kang G. Shin, Xinbing Wang, and Dongyao Chen."
+    },
+    {
+      "name": "METRO: Magnetic Road Markings for All-weather, Smart Roads",
+      "publisher": "Proceedings of the 21st ACM Conference on Embedded Networked Sensor Systems (SenSys 2023)",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": "Jike Wang, Shanmu Wang, Yasha Iravantchi, Mingke Wang, Alanson Sample, Kang G. Shin, Xinbing Wang, Chenghu Zhou, and Dongyao Chen."
+    },
+    {
       "name": "DualStrike: Accurate, Real-time Eavesdropping and Injection of Keystrokes on Commodity Keyboards",
       "publisher": "The Network and Distributed System Security Symposium (NDSS 2026)",
       "releaseDate": "2026",
       "url": "",
       "summary": "Xiaomeng Chen, Jike Wang, Zhenyu Chen, Alfred Chen, Xinbing Wang, and Dongyao Chen."
+    },
+    {
+      "name": "OralSense: Versatile, Accurate Oral Sensing With Customizable Magnets",
+      "publisher": "IEEE Transactions on Mobile Computing (TMC 2026)",
+      "releaseDate": "2026",
+      "url": "",
+      "summary": "Zhenyu Chen, Jike Wang, Ye Huang, Xiaomeng Chen, Xinbing Wang, and Dongyao Chen."
     },
     {
       "name": "μTouch: Enabling Accurate, Lightweight Self-Touch Sensing with Passive Magnets",
@@ -68,11 +79,11 @@
       "summary": "Siyuan Wang, Ke Li, Jingyuan Huang, Jike Wang, Cheng Zhang, Alanson Sample, and Dongyao Chen."
     },
     {
-      "name": "Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation",
-      "publisher": "Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (MobiCom 2024)",
-      "releaseDate": "2024",
+      "name": "FreeLoop: Enhancing Traffic Safety and Efficiency by Replacing Left Turns with Right-turning Loops",
+      "publisher": "ACM TURC 2026",
+      "releaseDate": "2026",
       "url": "",
-      "summary": "Jike Wang, Yasha Iravantchi, Alanson Sample, Kang G. Shin, Xinbing Wang, and Dongyao Chen."
+      "summary": "Jike Wang, Xinbing Wang, and Dongyao Chen."
     },
     {
       "name": "Demo: Implementation and Benchmark of Magnetic Tracking on Mobile Platforms",
@@ -80,16 +91,8 @@
       "releaseDate": "2024",
       "url": "",
       "summary": "Zhenyu Chen, Jike Wang, and Dongyao Chen."
-    },
-    {
-      "name": "METRO: Magnetic Road Markings for All-weather, Smart Roads",
-      "publisher": "Proceedings of the 21st ACM Conference on Embedded Networked Sensor Systems (SenSys 2023)",
-      "releaseDate": "2023",
-      "url": "",
-      "summary": "Jike Wang, Shanmu Wang, Yasha Iravantchi, Mingke Wang, Alanson Sample, Kang G. Shin, Xinbing Wang, Chenghu Zhou, and Dongyao Chen."
     }
   ],
-
   "projects": [
     {
       "name": "MagLens: Bringing Mobile, Fine-Grained Imaging to Ferrous Building Structures",
@@ -128,10 +131,46 @@
       "url": ""
     }
   ],
-
+  "presentations": [
+    {
+      "name": "MagLens: Bringing Mobile, Fine-Grained Imaging to Ferrous Building Structures",
+      "event": "ACM/IEEE SenSys 2026",
+      "location": "Saint-Malo, France",
+      "date": "2026-05",
+      "summary": ""
+    },
+    {
+      "name": "Enabling Robust and Scalable Robot Perception with Magnetic Sensing",
+      "event": "The 3rd AIoTSys 2025",
+      "location": "Lanzhou, China",
+      "date": "2025-08",
+      "summary": "Best Presentation Award."
+    },
+    {
+      "name": "Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation",
+      "event": "ACM MobiCom 2024",
+      "location": "Washington, D.C., USA",
+      "date": "2024-11",
+      "summary": ""
+    },
+    {
+      "name": "Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation",
+      "event": "Microsoft Research Asia (MSRA, Shanghai)",
+      "location": "Shanghai, China",
+      "date": "2024-11",
+      "summary": ""
+    },
+    {
+      "name": "METRO: Magnetic Road Markings for All-weather, Smart Roads",
+      "event": "ACM SenSys 2023",
+      "location": "Istanbul, Türkiye",
+      "date": "2023-11",
+      "summary": ""
+    }
+  ],
   "awards": [
     {
-      "title": "CPS-IoT Week 2026 SIGBED Student Travel Award",
+      "title": "CPS-IoT Week 2026 SIGBED Student Travel Award ($2,000)",
       "date": "2026",
       "awarder": "ACM SIGBED",
       "url": "",
@@ -180,27 +219,39 @@
       "summary": ""
     }
   ],
-
   "volunteer": [
+    {
+      "organization": "IEEE TMC (Transactions on Mobile Computing)",
+      "location": "",
+      "position": "Reviewer",
+      "url": "",
+      "startDate": "2026",
+      "endDate": "2026",
+      "dateLabel": "2026",
+      "summary": "Reviewer for IEEE Transactions on Mobile Computing, 2026.",
+      "highlights": []
+    },
     {
       "organization": "ACM MobiCom 2025",
       "location": "",
       "position": "Member, Artifact Evaluation Committee",
       "url": "",
-      "startDate": "2025-01",
-      "endDate": "2025-12",
+      "startDate": "2025",
+      "endDate": "2025",
       "summary": "Served on the Artifact Evaluation Committee for ACM MobiCom 2025.",
-      "highlights": []
+      "highlights": [],
+      "dateLabel": "2025"
     },
     {
-      "organization": "ACM IUI 2025",
+      "organization": "ACM IUI (Intelligent User Interfaces)",
       "location": "",
       "position": "Reviewer",
       "url": "",
-      "startDate": "2025-01",
-      "endDate": "2025-12",
-      "summary": "Reviewer for ACM IUI (Intelligent User Interfaces) 2025.",
-      "highlights": []
+      "startDate": "2025",
+      "endDate": "2026",
+      "summary": "Reviewer for ACM IUI (Intelligent User Interfaces), 2025 and 2026.",
+      "highlights": [],
+      "dateLabel": "2025, 2026"
     },
     {
       "organization": "Shanghai Jiao Tong University",
@@ -210,10 +261,8 @@
       "startDate": "2021-09",
       "endDate": "2025-12",
       "summary": "Teaching assistant for CS1501: Programming Methodology (2021–2025 Fall). CS1501 is the introductory course to computer science and programming at SJTU.",
-      "highlights": [
-        "Received an A grade evaluation in 2022 Fall.",
-        "Evaluated by 86 students."
-      ]
+      "highlights": ["Received an A grade evaluation in 2022 Fall.", "Evaluated by 86 students."],
+      "dateLabel": "2021 - 2025 Fall"
     },
     {
       "organization": "Shanghai Jiao Tong University",
@@ -223,41 +272,10 @@
       "startDate": "2022-06",
       "endDate": "2023-08",
       "summary": "Teaching assistant for CS106: Programming Practice (2022 Summer, 2023 Summer).",
-      "highlights": []
+      "highlights": [],
+      "dateLabel": "2022, 2023 Summer"
     }
   ],
-
-  "presentations": [
-    {
-      "name": "Enabling Robust and Scalable Robot Perception with Magnetic Sensing",
-      "event": "The 3rd AIoTSys 2025",
-      "location": "Lanzhou, China",
-      "date": "2025-08",
-      "summary": "Best Presentation Award."
-    },
-    {
-      "name": "Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation",
-      "event": "ACM MobiCom 2024",
-      "location": "Washington, D.C., USA",
-      "date": "2024-11",
-      "summary": ""
-    },
-    {
-      "name": "Polaris: Accurate, Vision-free Fiducials for Mobile Robots with Magnetic Constellation",
-      "event": "Microsoft Research Asia (MSRA, Shanghai)",
-      "location": "Shanghai, China",
-      "date": "2024-11",
-      "summary": ""
-    },
-    {
-      "name": "METRO: Magnetic Road Markings for All-weather, Smart Roads",
-      "event": "ACM SenSys 2023",
-      "location": "Istanbul, Türkiye",
-      "date": "2023-11",
-      "summary": ""
-    }
-  ],
-
   "languages": [],
   "certificates": [],
   "references": []
