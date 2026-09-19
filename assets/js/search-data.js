@@ -35,6 +35,11 @@ ninja.data = [{
           description: "DualStrike demonstrates non-invasive keystroke eavesdropping and per-key injection attacks on commodity Hall-effect keyboards.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dualstrike_project/";
+            },},{id: "projects-maglens-mobile-magnetic-imaging",
+          title: 'MagLens — Mobile Magnetic Imaging',
+          description: "A portable magnetic imaging system that reveals the contours and depth of hidden ferrous structures, from steel rebars to iron pipes.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/maglens_project/";
             },},{id: "projects-metro-magnetic-road-markings-for-all-weather-perception",
           title: 'METRO — Magnetic Road Markings for All-weather Perception',
           description: "A robust road surface marking system using passive magnetic tags and a low-cost magnetometer array.",
