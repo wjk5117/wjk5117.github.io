@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 10 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -31,15 +31,15 @@ I will be joining [Singapore Management University (SMU)](https://www.smu.edu.sg
 I received my Ph.D. in Computer Science from [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/), where I was fortunate to be advised by Prof. Dongyao Chen at the Sensing Intelligence & System Lab (SISL). Before that, I received my B.E. in Software Engineering from [Xidian University](https://www.xidian.edu.cn/), Xi'an, China, in 2021.
 
 My research focuses on building **robust, low-power sensing systems** for intelligent robots and AIoT platforms in complex real-world environments. By combining **wireless sensing, mobile robotics, and embedded intelligence**, I aim to enable **reliable perception and autonomy** under challenging conditions such as occlusion, interference, and limited resources. A central theme of my work is **magnetic sensing**, a low-cost and energy-efficient modality that remains effective when vision-based approaches fail. Along this direction, our team developed METRO, Polaris, and MagLens, and our work has appeared at leading venues including ACM MobiCom and ACM SenSys.
+
 <!-- My research interests include **wireless sensing**, **artificial Internet of Things (AIoT)**, and **mobile robotics**.
 I build robust and energy-efficient sensing systems that enable reliable perception in complex and dynamic environments for cyber-physical systems.
 Recently, I have been exploring **magnetic sensing** as a low-cost, low-power, and highly robust modality to perceive the environment when cameras or conventional sensors fail (e.g., under occlusion or NLoS conditions).
 Our works have been published at top international venues such as ACM SenSys and ACM MobiCom. -->
 
-
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
 
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. -->
 
-<!-- 
+<!--
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
