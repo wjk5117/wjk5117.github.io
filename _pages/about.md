@@ -2,15 +2,12 @@
 layout: about
 title: About
 permalink: /
-subtitle: Incoming Postdoctoral Researcher at SMU · AIoT & Wireless Sensing
+subtitle: AIoT · Wireless Sensing · Mobile Robotics
 
 profile:
   align: right
   image: jike_photo.jpg
   image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>Incoming Postdoctoral Researcher</p>
-    <p>Singapore Management University</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,9 +23,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I will be joining [Singapore Management University (SMU)](https://www.smu.edu.sg/) as a postdoctoral researcher, working with [Prof. Dongyao Chen](https://chendy.tech/).
+I am currently based in Singapore and will be joining [Singapore Management University (SMU)](https://www.smu.edu.sg/) as a postdoctoral researcher, working with [Prof. Dongyao Chen](https://chendy.tech/).
 
 I received my Ph.D. in Computer Science from [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/), where I was fortunate to be advised by Prof. Dongyao Chen at the Sensing Intelligence & System Lab (SISL). Before that, I received my B.E. in Software Engineering from [Xidian University](https://www.xidian.edu.cn/), Xi'an, China, in 2021.
+
+I also collaborate closely with [Prof. Kang G. Shin](https://eecs.engin.umich.edu/people/shin-kang-g/) and [Prof. Alanson Sample](https://midas.umich.edu/directory/alanson-sample/) at the University of Michigan on magnetic sensing and mobile systems.
 
 My research focuses on building **robust, low-power sensing systems** for intelligent robots and AIoT platforms in complex real-world environments. By combining **wireless sensing, mobile robotics, and embedded intelligence**, I aim to enable **reliable perception and autonomy** under challenging conditions such as occlusion, interference, and limited resources. A central theme of my work is **magnetic sensing**, a low-cost and energy-efficient modality that remains effective when vision-based approaches fail. Along this direction, our team developed METRO, Polaris, and MagLens, and our work has appeared at leading venues including ACM MobiCom and ACM SenSys.
 
