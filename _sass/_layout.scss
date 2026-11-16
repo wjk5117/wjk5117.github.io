@@ -57,7 +57,8 @@ body.sticky-bottom-footer {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
 
-  > .profile {
+  > .profile.float-right,
+  > .profile.float-left {
     width: 100%;
     margin: 0;
   }
