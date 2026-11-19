@@ -2,12 +2,16 @@
 layout: about
 title: About
 permalink: /
-subtitle: AIoT · Wireless Sensing · Mobile Robotics
+subtitle: Postdoctoral Researcher at SMU · AIoT & Wireless Sensing
 
 profile:
   align: right
   image: jike_photo.jpg
   image_circular: true # crops the image to make it circular
+  more_info: >
+    <p>SCIS 1, Level 3</p><br>
+    <p>Singapore Management University</p><br>
+    <p>Singapore</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -23,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently based in Singapore and will be joining [Singapore Management University (SMU)](https://www.smu.edu.sg/) as a postdoctoral researcher, working with [Prof. Dongyao Chen](https://chendy.tech/). I also collaborate closely with [Prof. Kang G. Shin](https://web.eecs.umich.edu/~kgshin/) and [Prof. Alanson Sample](https://midas.umich.edu/directory/alanson-sample/) at the University of Michigan on magnetic sensing and mobile systems.
+I am a postdoctoral researcher at [Singapore Management University (SMU)](https://www.smu.edu.sg/), working with [Prof. Dongyao Chen](https://chendy.tech/). I also collaborate closely with [Prof. Kang G. Shin](https://web.eecs.umich.edu/~kgshin/) and [Prof. Alanson Sample](https://midas.umich.edu/directory/alanson-sample/) at the University of Michigan on magnetic sensing and mobile systems.
 
 I received my Ph.D. in Computer Science from [Shanghai Jiao Tong University (SJTU)](https://www.sjtu.edu.cn/), where I was fortunate to be advised by Prof. Dongyao Chen at the Sensing Intelligence & System Lab (SISL). Before that, I received my B.E. in Software Engineering from [Xidian University](https://www.xidian.edu.cn/), Xi'an, China, in 2021.
 
