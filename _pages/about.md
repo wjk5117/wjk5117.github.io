@@ -9,6 +9,7 @@ profile:
   image: jike_photo.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
+    <div class="profile-email"><a href="mailto:jkwang@smu.edu.sg">jkwang@smu.edu.sg</a></div>
     <p>SCIS 1, Level 3</p><br>
     <p>Singapore Management University</p><br>
     <p>Singapore</p>

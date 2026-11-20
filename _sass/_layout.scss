@@ -67,6 +67,15 @@ body.sticky-bottom-footer {
     text-align: center;
     font-size: 0.9rem;
     line-height: 1.6;
+
+    .profile-email {
+      margin-bottom: 0.75rem;
+      font-family: Roboto, sans-serif;
+
+      a {
+        overflow-wrap: anywhere;
+      }
+    }
   }
 
   > .about-biography {
