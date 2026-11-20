@@ -68,11 +68,23 @@ body.sticky-bottom-footer {
     font-size: 0.9rem;
     line-height: 1.6;
 
-    .profile-email {
-      margin-bottom: 0.75rem;
+    .profile-contact {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: 0.35rem 0.6rem;
+      width: fit-content;
+      max-width: 100%;
+      margin: 0.75rem auto 0;
+      text-align: left;
       font-family: Roboto, sans-serif;
 
-      a {
+      dt {
+        font-weight: 500;
+      }
+
+      dd {
+        min-width: 0;
+        margin: 0;
         overflow-wrap: anywhere;
       }
     }

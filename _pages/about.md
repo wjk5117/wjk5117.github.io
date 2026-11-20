@@ -9,10 +9,10 @@ profile:
   image: jike_photo.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <div class="profile-email"><a href="mailto:jkwang@smu.edu.sg">jkwang@smu.edu.sg</a></div>
-    <p>SCIS 1, Level 3</p><br>
-    <p>Singapore Management University</p><br>
-    <p>Singapore</p>
+    <dl class="profile-contact">
+      <dt>Email:</dt><dd><a href="mailto:jkwang@smu.edu.sg">jkwang@smu.edu.sg</a></dd>
+      <dt>Address:</dt><dd>SCIS 1, Level 3, SMU</dd>
+    </dl>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
