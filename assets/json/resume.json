@@ -4,7 +4,6 @@
     "label": "Postdoctoral Researcher at SMU",
     "image": "",
     "email": "jkwang@smu.edu.sg",
-    "phone": "+86 13186082516",
     "url": "https://wjk5117.github.io/",
     "summary": "My research is driven by the goal of enabling reliable perception and autonomy for intelligent systems in the real world. I focus on building robust, low-power sensing systems for intelligent robots and AIoT platforms that can operate effectively in complex environments where conventional vision-based approaches often break down. By combining wireless sensing, mobile robotics, and embedded intelligence, I aim to expand the sensing frontier for real-world autonomy under occlusion, interference, and resource constraints. A central theme of my work is magnetic sensing, a modality inherently resilient to occlusion, lighting variation, and wireless interference. Along this direction, our team developed METRO for all-weather road-marking perception, Polaris, a vision-free magnetic fiducial system for accurate robot pose estimation, and MagLens for mobile fine-grained imaging of hidden ferrous structures. Our work has appeared at leading international venues, including ACM MobiCom, ACM SenSys, and NDSS Symposium.",
     "profiles": []
